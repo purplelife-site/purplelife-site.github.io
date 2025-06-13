@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: 'GothamLogo';
-    src: url('Gotham Condensed/GothamCond-Book.otf');
+    src: url('/GothamCond-Book.otf');
     font-weight: 400;
 }
 
