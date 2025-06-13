@@ -10,7 +10,7 @@ const blogPosts = [
       <h1>${post.title}</h1>
       <p class="date">${post.date}</p>
       <p class="category">หมวดหมู่: <span>${post.category}</span></p>
-      <p class="author">โดย <a href="/author.html?slug=${slugify(post.author)}">${post.author}</a></p>
+      <p class="author">โดย <a href="/author?slug=${slugify(post.author)}">${post.author}</a></p>
       <br><hr><br>
       <p>
         การทดสอบโพสต์
