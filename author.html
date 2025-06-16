@@ -1,3 +1,4 @@
+
 <!-- author.html -->
 <!DOCTYPE html>
 <html lang="th">
@@ -6,44 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PurpleLife - ผู้เขียน</title>
   <link rel="stylesheet" href="main.css" />
-  <style>
-    .profile-wrapper {
-      position: relative;
-      display: inline-block;
-      margin-bottom: 10px;
-    }
-
-    .profile-avatar {
-      width: 180px;
-      border-radius: 50%;
-    }
-
-    .status-bubble {
-      position: absolute;
-      bottom: -10px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: #eee;
-      padding: 6px 12px;
-      border-radius: 18px;
-      font-size: 14px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-      white-space: nowrap;
-    }
-  </style>
 </head>
 <body>
   <header>
-    <a href="/" class="logo">Purple Life</a>
+    <a href="/" class="logo">PurpleLife</a>
   </header>
   
   <div id="author-container" class="blog"></div>
 
   <footer>
     <div class="container">
-      <hr>
-      <br>
-      <p>&copy; 2025 Purple Life</p>
+      <br />
+      <p>&copy; 2025 PurpleLife</p>
+      <br />
     </div>
   </footer>
 
@@ -68,12 +44,12 @@
         <div class="profile-wrapper">
           <img class="profile-avatar" src="${author.avatar}" alt="${author.name}">
         </div>
-        <h1>${author.name} <span>${author.pronouns}</span></h1>
-        <p>"${author.bio}"</p>
+        <h1>${author.name}</h1>
+        <p>@${author.username}</p>
         <nav>
-          ${author.socials.facebook ? `<a href="${author.socials.facebook}" target="_blank" class="social"><i class="fab fa-facebook"></i></a>` : ""}
-          ${author.socials.twitter ? `<a href="${author.socials.twitter}" target="_blank" class="social"><i class="fab fa-twitter"></i></a>` : ""}
-          ${author.socials.instagram ? `<a href="${author.socials.instagram}" target="_blank" class="social"><i class="fab fa-instagram"></i></a>` : ""}
+          ${author.socials.facebook ? `<a href="${author.socials.facebook}" target="_blank" class="social"><img src="assets/icons/facebook.png"></a>` : ""}
+          ${author.socials.twitter ? `<a href="${author.socials.twitter}" target="_blank" class="social"><img src="assets/icons/twitter-2.png"></a>` : ""}
+          ${author.socials.instagram ? `<a href="${author.socials.instagram}" target="_blank" class="social"></a>` : ""}
         </nav>
       `;
     }

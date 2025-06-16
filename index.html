@@ -2,42 +2,48 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Purple Life</title>
-  <link rel="stylesheet" href="main.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PurpleLife</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
   <header>
-      <a href="/" class="logo">Purple Life</a>
+    <a href="/" class="logo">PurpleLife</a>
   </header>
 
   <section id="blog" class="blog">
-  <div class="container">
-    <div class="heading">โพสต์ล่าสุด</div>
-    <br>
-    <div class="blog-grid" id="blogGrid">
-      <!-- บล็อกจะถูกแทรกผ่าน JavaScript -->
+    <div class="container">
+      <div class="heading-with-filter">
+        <div class="heading">ยินดีต้อนรับ!</div>
+
+        <div class="blog-controls">
+          <input type="text" id="searchInput" placeholder="ค้นหา..." />
+        </div>
+      </div>
+
+      <br />
+
+      <div class="blog-grid" id="blogGrid">
+        
+      </div>
+    </div>
+  </section>
+
+  <div id="blog-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modal-body">
+        
+      </div>
     </div>
   </div>
-</section>
-
-
-<!-- Modal -->
-<div id="blog-modal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <div id="modal-body">
-      <!-- บทความจะโหลดตรงนี้ -->
-    </div>
-  </div>
-</div>
-
 
   <footer>
     <div class="container">
-      <hr>
-      <br>
-      <p>&copy; 2025 Purple Life</p>
+      <br />
+      <p>&copy; 2025 PurpleLife</p>
+      <br />
     </div>
   </footer>
 
